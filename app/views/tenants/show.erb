@@ -1,0 +1,9 @@
+<h1>Tenant Details</h1>
+
+<h2>Name</h2>
+<h3><%= @tenant.name %></h3>
+
+<form method='post' action="/tenants/<%=@tenant.id%>">
+<input type="hidden" name="_method" value="DELETE">
+<input type='submit' id='submit' value='Delete'>
+</form>

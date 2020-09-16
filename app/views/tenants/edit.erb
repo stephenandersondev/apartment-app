@@ -1,1 +1,8 @@
+<h1>Edit Tenant</h1>
 
+<form method='post' action="/tenants/<%=@tenant.id%>">
+<input type="hidden" name="_method" value="PATCH">
+<label>Name:<input type='text' name="tenant[name]" value='<%=@tenant.name%>'></label>
+<label>Apartment:<input type='text' name="tenant[apartment_id]" value='<%=@apartment.id%>'></label>
+<input type='submit' id='submit' value='Update'>
+</form>
